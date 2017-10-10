@@ -1,0 +1,65 @@
+{
+  "custom_classes": 0,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "golden retriever dog",
+              "score": 0.629,
+              "type_hierarchy": "/animal/domestic animal/dog/retriever dog/golden retriever dog"
+            },
+            {
+              "class": "retriever dog",
+              "score": 0.69
+            },
+            {
+              "class": "dog",
+              "score": 0.891
+            },
+            {
+              "class": "domestic animal",
+              "score": 0.899
+            },
+            {
+              "class": "animal",
+              "score": 0.935
+            },
+            {
+              "class": "puppy",
+              "score": 0.584,
+              "type_hierarchy": "/animal/domestic animal/dog/puppy"
+            },
+            {
+              "class": "pup",
+              "score": 0.545,
+              "type_hierarchy": "/animal/young/pup"
+            },
+            {
+              "class": "young",
+              "score": 0.553
+            },
+            {
+              "class": "small dog",
+              "score": 0.5,
+              "type_hierarchy": "/animal/domestic animal/dog/small dog"
+            },
+            {
+              "class": "reddish orange color",
+              "score": 0.806
+            },
+            {
+              "class": "pink color",
+              "score": 0.636
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default"
+        }
+      ],
+      "image": "puppy.jpeg"
+    }
+  ],
+  "images_processed": 1
+}
