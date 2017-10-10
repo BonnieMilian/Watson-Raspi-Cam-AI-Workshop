@@ -1,0 +1,27 @@
+{
+    "images": [
+      {
+        "faces": [
+          {
+            "age": {
+              "max": 24,
+              "min": 18,
+              "score": 0.448964
+            },
+            "face_location": {
+              "height": 164,
+              "left": 116,
+              "top": 10,
+              "width": 137
+            },
+            "gender": {
+              "gender": "FEMALE",
+              "score": 0
+            }
+          }
+        ],
+        "image": "bonnie.jpg"
+      }
+    ],
+    "images_processed": 1
+}
