@@ -1,0 +1,35 @@
+{
+  "name": "watson-raspi-cam-ai-workshop",
+  "version": "1.0.0",
+  "description": "Workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonnieMilian/Watson-Raspi-Cam-AI-Workshop.git"
+  },
+  "keywords": [
+    "Workshop",
+    "Watson",
+    "AI",
+    "Visual",
+    "RaspberryPi",
+    "RaspiCam",
+    "NodeJS",
+    "Johnny-Five"
+  ],
+  "author": "@BonnieMilian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BonnieMilian/Watson-Raspi-Cam-AI-Workshop/issues"
+  },
+  "homepage": "https://github.com/BonnieMilian/Watson-Raspi-Cam-AI-Workshop#readme",
+  "dependencies": {
+    "johnny-five": "^0.11.6",
+    "watson-developer-cloud": "^2.41.1",
+    "raspi-io": "^8.1.0",
+    "raspicam": "^0.2.14"
+  }
+}
