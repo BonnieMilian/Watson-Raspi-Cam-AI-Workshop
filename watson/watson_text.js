@@ -8,12 +8,12 @@ var visual_recognition = watson.visual_recognition({
 });
 
 var params = {
-  images_file: fs.createReadStream('./bonnie.jpg')
+  images_file: fs.createReadStream('./hello-world.png')
 };
 
-visual_recognition.detectFaces(params, (err, response) => {
+visual_recognition.recognizeText(params, (err, res) => {
   if (err)
     console.log(err);
   else
-    console.log(JSON.stringify(response, null, 2));
+    console.log(JSON.stringify(res, null, 2));
 });

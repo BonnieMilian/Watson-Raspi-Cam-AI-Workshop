@@ -1,0 +1,21 @@
+{
+  "custom_classes": 1,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "myself",
+              "score": 0.385959
+            }
+          ],
+          "classifier_id": "myself_012345678",
+          "name": "myself"
+        }
+      ],
+      "image": "bonnie.jpg"
+    }
+  ],
+  "images_processed": 1
+}

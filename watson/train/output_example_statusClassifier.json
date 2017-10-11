@@ -1,0 +1,12 @@
+{
+  "classifier_id": "myself_012345678",
+  "name": "myself",
+  "owner": "01234567-89ab-cdef-0123-456789abcdef",
+  "status": "ready",
+  "created": "2017-10-10T18:26:01.963Z",
+  "classes": [
+    {
+      "class": "myself"
+    }
+  ]
+}

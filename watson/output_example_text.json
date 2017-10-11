@@ -1,0 +1,33 @@
+{
+    "images": [
+        {
+        "image": "hello-world.png",
+        "text": "hello world",
+        "words": [
+            {
+            "line_number": 0,
+            "location": {
+                "height": 89,
+                "left": 121,
+                "top": 11,
+                "width": 241
+            },
+            "score": 0.5616,
+            "word": "hello"
+            },
+            {
+            "line_number": 0,
+            "location": {
+                "height": 80,
+                "left": 396,
+                "top": 18,
+                "width": 239
+            },
+            "score": 0.5754,
+            "word": "world"
+            }
+        ]
+        }
+    ],
+    "images_processed": 1
+}

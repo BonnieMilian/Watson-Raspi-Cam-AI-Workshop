@@ -7,13 +7,12 @@ var visual_recognition = watson.visual_recognition({
   version_date: '2016-05-20'
 });
 
-var params = {
-  images_file: fs.createReadStream('./bonnie.jpg')
-};
-
-visual_recognition.detectFaces(params, (err, response) => {
-  if (err)
+//Replace with your own classifier ID
+visual_recognition.getClassifier({
+  classifier_id: 'myself_ID' }, (err, response) => {
+   if (err)
     console.log(err);
-  else
+   else
     console.log(JSON.stringify(response, null, 2));
-});
+  }
+);
