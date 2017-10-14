@@ -5,7 +5,7 @@ var board = new five.Board({
   io: new Raspi()
 });
 
-var button;
+var button, led;
 
 board.on("ready", () => {
   button = new five.Button({
@@ -13,11 +13,17 @@ board.on("ready", () => {
     isPullup: true
   });
 
+  led = new five.Led({
+    pin: "GPIO17"
+  });
+
   button.on("down", (value) => {
+    led.on();
     console.log("Pressed");
   });
 
   button.on("up", () => {
+    led.off();
     console.log("Released");
   });
 });
