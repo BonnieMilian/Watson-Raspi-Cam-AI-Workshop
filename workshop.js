@@ -1,6 +1,8 @@
 var five = require("johnny-five");
 var Raspi = require("raspi-io");
 var RaspiCam = require("raspicam");
+var watson = require('watson-developer-cloud');
+var fs = require('fs');
 
 var camera = new RaspiCam({
   mode: "photo",
@@ -10,6 +12,12 @@ var camera = new RaspiCam({
 
 var board = new five.Board({
   io: new Raspi()
+});
+
+var visual_recognition = watson.visual_recognition({
+    api_key: 'API-KEY',
+    version: 'v3',
+    version_date: '2016-05-20'
 });
 
 var button, led;
@@ -47,6 +55,17 @@ camera.on("read", (error, timestamp, filename) => {
     return;
   led.off();
   console.log("Picture Saved, " + filename);
+
+  var params = {
+    images_file: fs.createReadStream('./'+filename)
+  };
+
+  visual_recognition.classify(params, (err, res) => {
+    if (err)
+      console.log(err);
+    else
+      console.log(JSON.stringify(res, null, 2));
+  });
 });
 
 camera.on("exit", (timestamp) => {
