@@ -57,7 +57,9 @@ camera.on("read", (error, timestamp, filename) => {
   console.log("Picture Saved, " + filename);
 
   var params = {
-    images_file: fs.createReadStream('./'+filename)
+    images_file: fs.createReadStream('./'+filename),
+    classifier_ids: ["myself_012345678"],
+    threshold: 0.0
   };
 
   visual_recognition.classify(params, (err, res) => {
